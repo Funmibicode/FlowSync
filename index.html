@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowSync - Project Management Reimagined</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="py-4">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <div class="logo text-xl font-bold text-gray-800">FlowSync</div>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#features" class="text-gray-700 hover:text-gray-900 font-medium transition">Features</a>
+                <a href="#pricing" class="text-gray-700 hover:text-gray-900 font-medium transition">Pricing</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 font-medium transition">Resources</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 font-medium transition">Company</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <button class="btn-secondary hidden md:block">Sign In</button>
+                <button class="btn-primary hidden md:block">Get Started</button>
+                <div class="hamburger md:hidden" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" onclick="toggleMobileMenu()">×</button>
+        <div class="mobile-menu-links">
+            <a href="#features" onclick="toggleMobileMenu()">Features</a>
+            <a href="#pricing" onclick="toggleMobileMenu()">Pricing</a>
+            <a href="#" onclick="toggleMobileMenu()">Resources</a>
+            <a href="#" onclick="toggleMobileMenu()">Company</a>
+            <button class="btn-primary mt-4">Get Started</button>
+            <button class="btn-secondary">Sign In</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-20 md:py-32 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center ">
+                <h1 class="hero-title text-xl font-bolder">
+                    Project management<br/>
+                    that feels like <span style="background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">magic</span>
+                </h1>
+                <p class="hero-subtitle max-w-2xl mx-auto">
+                    Stop juggling tools. FlowSync brings your team, tasks, and timeline into one beautiful workspace. Get more done with less stress.
+                </p>
+                <div class="hero-buttons flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button class="btn-primary text-lg">Start Free Trial</button>
+                    <button class="btn-secondary text-lg">Watch Demo</button>
+                </div>
+                <p class="text-sm mt-6" style="color: var(--text-secondary);">No credit card required • 14-day free trial • Cancel anytime</p>
+            </div>
+
+            <!-- Dashboard Preview -->
+            <div class="dashboard-preview mt-16 md:mt-24 max-w-6xl mx-auto">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=700&fit=crop" alt="Dashboard Preview" class="w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white stats">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="stat-card fade-in">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Active Teams</div>
+                </div>
+                <div class="stat-card fade-in" style="animation-delay: 0.1s;">
+                    <div class="stat-number">2M+</div>
+                    <div class="stat-label">Tasks Completed</div>
+                </div>
+                <div class="stat-card fade-in" style="animation-delay: 0.2s;">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Uptime SLA</div>
+                </div>
+                <div class="stat-card fade-in" style="animation-delay: 0.3s;">
+                    <div class="stat-number">4.9★</div>
+                    <div class="stat-label">User Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Everything you need to ship faster</h2>
+                <p class="text-xl max-w-2xl mx-auto" style="color: var(--text-secondary);">Powerful features that adapt to your workflow, not the other way around.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card slide-up">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Lightning Fast</h3>
+                    <p class="feature-description">Built for speed. Updates in real-time, syncs instantly, and never slows you down.</p>
+                </div>
+
+                <div class="feature-card slide-up" style="animation-delay: 0.1s;">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Smart Automation</h3>
+                    <p class="feature-description">Let FlowSync handle the repetitive stuff. Set up rules once and watch the magic happen.</p>
+                </div>
+
+                <div class="feature-card slide-up" style="animation-delay: 0.2s;">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Visual Insights</h3>
+                    <p class="feature-description">Beautiful dashboards that tell you what matters. No more guessing where your project stands.</p>
+                </div>
+
+                <div class="feature-card slide-up" style="animation-delay: 0.3s;">
+                    <div class="feature-icon">🔗</div>
+                    <h3 class="feature-title">Seamless Integration</h3>
+                    <p class="feature-description">Connect with 100+ tools you already use. Slack, GitHub, Figma, and more.</p>
+                </div>
+
+                <div class="feature-card slide-up" style="animation-delay: 0.4s;">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-title">Enterprise Security</h3>
+                    <p class="feature-description">Bank-level encryption, SSO, and compliance. Your data is safe with us.</p>
+                </div>
+
+                <div class="feature-card slide-up" style="animation-delay: 0.5s;">
+                    <div class="feature-icon">🌍</div>
+                    <h3 class="feature-title">Global Collaboration</h3>
+                    <p class="feature-description">Work together from anywhere. Real-time updates keep everyone in sync.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Simple, transparent pricing</h2>
+                <p class="text-xl max-w-2xl mx-auto" style="color: var(--text-secondary);">Start free, scale as you grow. No hidden fees, no surprises.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Starter Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-name">Starter</div>
+                    <div class="pricing-price">$0</div>
+                    <div class="pricing-period">Forever free</div>
+                    <button class="btn-secondary w-full mb-8">Get Started</button>
+                    <div>
+                        <div class="feature-item">Up to 5 team members</div>
+                        <div class="feature-item">10 projects</div>
+                        <div class="feature-item">Basic integrations</div>
+                        <div class="feature-item">Mobile apps</div>
+                        <div class="feature-item">Community support</div>
+                    </div>
+                </div>
+
+                <!-- Pro Plan (Featured) -->
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">MOST POPULAR</div>
+                    <div class="pricing-name">Professional</div>
+                    <div class="pricing-price">$29</div>
+                    <div class="pricing-period">per user/month</div>
+                    <button class="btn-primary w-full mb-8">Start Free Trial</button>
+                    <div>
+                        <div class="feature-item">Unlimited team members</div>
+                        <div class="feature-item">Unlimited projects</div>
+                        <div class="feature-item">Advanced integrations</div>
+                        <div class="feature-item">Custom workflows</div>
+                        <div class="feature-item">Priority support</div>
+                        <div class="feature-item">Advanced analytics</div>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-name">Enterprise</div>
+                    <div class="pricing-price">Custom</div>
+                    <div class="pricing-period">Contact sales</div>
+                    <button class="btn-secondary w-full mb-8">Contact Sales</button>
+                    <div>
+                        <div class="feature-item">Everything in Pro</div>
+                        <div class="feature-item">Dedicated account manager</div>
+                        <div class="feature-item">SSO & SAML</div>
+                        <div class="feature-item">Advanced security</div>
+                        <div class="feature-item">Custom contracts</div>
+                        <div class="feature-item">24/7 phone support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="cta-section text-center relative z-10">
+                <h2 class="cta-title">Ready to transform your workflow?</h2>
+                <p class="cta-subtitle max-w-2xl mx-auto">Join 50,000+ teams who've already made the switch to FlowSync.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button class="btn-primary text-lg">Start Your Free Trial</button>
+                    <button class="btn-secondary text-lg" style="border-color: white; color: white;">Schedule a Demo</button>
+                </div>
+                <p class="text-sm text-white/70 mt-6">14-day free trial • No credit card required • Cancel anytime</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Brand Section - Full width on mobile -->
+            <div class="mb-12">
+                <div class="logo mb-4">FlowSync</div>
+                <p class="text-white/70 mb-6 max-w-md">Project management that feels like magic.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="footer-link text-2xl hover:scale-110 transition-transform">𝕏</a>
+                    <a href="#" class="footer-link text-2xl hover:scale-110 transition-transform">in</a>
+                    <a href="#" class="footer-link text-2xl hover:scale-110 transition-transform">f</a>
+                    <a href="#" class="footer-link text-2xl hover:scale-110 transition-transform">📺</a>
+                </div>
+            </div>
+
+            <!-- Links Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Product</h4>
+                    <div class="flex flex-col gap-3">
+                        <a href="#" class="footer-link text-base">Features</a>
+                        <a href="#" class="footer-link text-base">Pricing</a>
+                        <a href="#" class="footer-link text-base">Integrations</a>
+                        <a href="#" class="footer-link text-base">Changelog</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Company</h4>
+                    <div class="flex flex-col gap-3">
+                        <a href="#" class="footer-link text-base">About</a>
+                        <a href="#" class="footer-link text-base">Blog</a>
+                        <a href="#" class="footer-link text-base">Careers</a>
+                        <a href="#" class="footer-link text-base">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Legal</h4>
+                    <div class="flex flex-col gap-3">
+                        <a href="#" class="footer-link text-base">Privacy Policy</a>
+                        <a href="#" class="footer-link text-base">Terms of Service</a>
+                        <a href="#" class="footer-link text-base">Security</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-white/10 pt-8 pb-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-white/50 text-sm">&copy; 2026 FlowSync. All rights reserved.</p>
+                <button id="scrollToTop" class="text-white/70 hover:text-white text-sm font-medium transition-colors flex items-center gap-2">
+                    Back to top ↑
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
