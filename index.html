@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlowSync - Project Management Reimagined</title>
+    <title>Prismly - Project Management Reimagined</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Suppress Tailwind CDN warning for portfolio/demo purposes
+        tailwind.config = {
+            theme: {
+                extend: {}
+            }
+        }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
@@ -14,7 +22,7 @@
     <!-- Navigation -->
     <nav class="py-4">
         <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
-            <div class="logo text-xl font-bold text-gray-800">FlowSync</div>
+            <div class="logo">Prismly</div>
             <div class="hidden md:flex items-center gap-8">
                 <a href="#features" class="text-gray-700 hover:text-gray-900 font-medium transition">Features</a>
                 <a href="#pricing" class="text-gray-700 hover:text-gray-900 font-medium transition">Pricing</a>
@@ -49,13 +57,13 @@
     <!-- Hero Section -->
     <section class="hero-bg py-20 md:py-32 relative z-10">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="max-w-4xl mx-auto text-center ">
-                <h1 class="hero-title text-xl font-bolder">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="hero-title">
                     Project management<br/>
                     that feels like <span style="background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">magic</span>
                 </h1>
                 <p class="hero-subtitle max-w-2xl mx-auto">
-                    Stop juggling tools. FlowSync brings your team, tasks, and timeline into one beautiful workspace. Get more done with less stress.
+                    Stop juggling tools. Prismly brings your team, tasks, and timeline into one beautiful workspace. Get more done with less stress.
                 </p>
                 <div class="hero-buttons flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <button class="btn-primary text-lg">Start Free Trial</button>
@@ -113,7 +121,7 @@
                 <div class="feature-card slide-up" style="animation-delay: 0.1s;">
                     <div class="feature-icon">🎯</div>
                     <h3 class="feature-title">Smart Automation</h3>
-                    <p class="feature-description">Let FlowSync handle the repetitive stuff. Set up rules once and watch the magic happen.</p>
+                    <p class="feature-description">Let Prismly handle the repetitive stuff. Set up rules once and watch the magic happen.</p>
                 </div>
 
                 <div class="feature-card slide-up" style="animation-delay: 0.2s;">
@@ -208,7 +216,7 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="cta-section text-center relative z-10">
                 <h2 class="cta-title">Ready to transform your workflow?</h2>
-                <p class="cta-subtitle max-w-2xl mx-auto">Join 50,000+ teams who've already made the switch to FlowSync.</p>
+                <p class="cta-subtitle max-w-2xl mx-auto">Join 50,000+ teams who've already made the switch to Prismly.</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <button class="btn-primary text-lg">Start Your Free Trial</button>
                     <button class="btn-secondary text-lg" style="border-color: white; color: white;">Schedule a Demo</button>
@@ -223,7 +231,7 @@
         <div class="max-w-7xl mx-auto px-6">
             <!-- Brand Section - Full width on mobile -->
             <div class="mb-12">
-                <div class="logo mb-4">FlowSync</div>
+                <div class="logo mb-4">Prismly</div>
                 <p class="text-white/70 mb-6 max-w-md">Project management that feels like magic.</p>
                 <div class="flex gap-4">
                     <a href="#" class="footer-link text-2xl hover:scale-110 transition-transform">𝕏</a>
@@ -234,8 +242,8 @@
             </div>
 
             <!-- Links Grid -->
-            <div class="grid grid-cols-1  md:grid-cols-3 gap-5 mb-12 px-10">
-                <div class="footer-row">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div>
                     <h4 class="font-bold mb-4 text-lg">Product</h4>
                     <div class="flex flex-col gap-3">
                         <a href="#" class="footer-link text-base">Features</a>
@@ -244,7 +252,7 @@
                         <a href="#" class="footer-link text-base">Changelog</a>
                     </div>
                 </div>
-                <div class="footer-row">
+                <div>
                     <h4 class="font-bold mb-4 text-lg">Company</h4>
                     <div class="flex flex-col gap-3">
                         <a href="#" class="footer-link text-base">About</a>
@@ -253,7 +261,7 @@
                         <a href="#" class="footer-link text-base">Contact</a>
                     </div>
                 </div>
-                <div class="footer-row">
+                <div>
                     <h4 class="font-bold mb-4 text-lg">Legal</h4>
                     <div class="flex flex-col gap-3">
                         <a href="#" class="footer-link text-base">Privacy Policy</a>
@@ -264,8 +272,8 @@
             </div>
 
             <!-- Bottom Bar -->
-            <div class="border-t border-white/10 pt-8 pb-8 flex flex-col sm:flex-row justify-between items-center gap-4 ">
-                <p class="text-white/50 text-sm">&copy; 2026 FlowSync. All rights reserved.</p>
+            <div class="border-t border-white/10 pt-8 pb-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-white/50 text-sm">&copy; 2026 Prismly. All rights reserved.</p>
                 <button id="scrollToTop" class="text-white/70 hover:text-white text-sm font-medium transition-colors flex items-center gap-2">
                     Back to top ↑
                 </button>
